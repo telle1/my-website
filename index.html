@@ -217,12 +217,14 @@
               data-aos-delay="500"
               data-aos-once="true"
             >
-              After graduating, I had a bit of a post-grad life crisis and decided to
-              switch career paths. I looked into programming, and once I started, I knew it was what I wanted to do.
-              I am very passionate about art and design, so learning the front-end didn't even feel like work,
-              but I'm also a very logical person &#40;any other Logistician
-              ISTJ's?&#41; thus the problem-solving nature of the back-end drew
-              me in. Finding that sweet blend of creativity and logic was exactly what I wanted out of a career.
+              After graduating, I had a bit of a post-grad life crisis and
+              decided to switch career paths. I looked into programming, and
+              once I started, I knew it was what I wanted to do. I am very
+              passionate about art and design, so learning the front-end didn't
+              even feel like work, but I'm also a very logical person &#40;any
+              other Logistician ISTJ's?&#41; thus the problem-solving nature of
+              the back-end drew me in. Finding that sweet blend of creativity
+              and logic was exactly what I wanted out of a career.
             </p>
             <p
               class="about-me-par"
@@ -233,9 +235,10 @@
             >
               And with that, I decided to take a leap of faith and enroll at
               Hackbright Academy, where I was able to expand on my previous
-              knowledge of web dev, solidify my understanding of core computer science, and learn new
-              technologies such as React, Python, Flask, SQL, etc. I am now looking for a role
-              in the industry, and couldn't be more excited. 
+              knowledge of web dev, solidify my understanding of core computer
+              science, and learn new technologies such as React, Python, Flask,
+              SQL, etc. I am now looking for a role in the industry, and
+              couldn't be more excited.
             </p>
             <p
               class="about-me-par"
@@ -331,7 +334,10 @@
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./images/joyride/joyride.png" alt="Project Joyride" />
+                  <img
+                    src="./images/joyride/joyride.png"
+                    alt="Project Joyride"
+                  />
                 </div>
                 <div class="carousel-item">
                   <img
@@ -414,7 +420,10 @@
                 <a href="https://github.com/telle1/Joyride" target="_blank"
                   ><i class="fab fa-3x fa-github"></i
                 ></a>
-                <a href="https://www.youtube.com/watch?v=B2i-zAsD2io&ab_channel=TiffanyLuu" target="_blank">
+                <a
+                  href="https://www.youtube.com/watch?v=B2i-zAsD2io&ab_channel=TiffanyLuu"
+                  target="_blank"
+                >
                   <i class="fab fa-3x fa-youtube"></i>
                 </a>
               </div>
@@ -533,14 +542,39 @@
     >
       <div class="container mt-10">
         <h1 class="text-center mb-5">Contact</h1>
-        <form name="contact" action="POST" data-netlify="true"
-        enctype="text/plain" >
+        <form
+          name="contact-form"
+          method="POST"
+          data-netlify="true"
+        >
           <div class="form-full-name mb-2">
-            <input type="text" name="first-name" class="form-fname" placeholder="First Name" required />
-            <input type="text" name="last-name" class="form-lname" placeholder="Last Name" />
+            <input
+              type="text"
+              name="first-name"
+              class="form-fname"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="last-name"
+              class="form-lname"
+              placeholder="Last Name"
+            />
           </div>
-          <input type="text" name="subject" class="subject" placeholder="Subject" />
-          <textarea class="d-block" name="message" rows="5" placeholder="Message" required></textarea>
+          <input
+            type="text"
+            name="subject"
+            class="subject"
+            placeholder="Subject"
+          />
+          <textarea
+            class="d-block"
+            name="message"
+            rows="5"
+            placeholder="Message"
+            required
+          ></textarea>
           <button type="submit" class="btn btn-chat">Let's Chat</button>
         </form>
         <div id="message" class="d-block text-center mt-3"></div>
@@ -573,12 +607,29 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      document.querySelector('form').onsubmit = function(e) {
-      // e.preventDefault();
-      document.getElementById('message').innerHTML = "Thanks, I'll get in touch!"
+    <!-- <script>
+      const processForm = (form) => {
+        const data = new FormData(form);
+        data.append('form-name', 'contact-form');
+        fetch('/', {
+          method: 'POST',
+          body: data,
+        })
+          .then(() => {
+             document.getElementById('message').innerHTML = "Thanks, I'll get in touch!";
+          })
+          .catch((error) => {
+            document.getElementById('message').innerHTML = "Oops! Sorry, something went wrong.";
+          });
+      };
 
-}
-    </script>
+      contactForm = document.querySelector('form');
+      contactForm.onsubmit = function (e) {
+        e.preventDefault();
+        processForm(contactForm);
+
+
+      };
+    </script> -->
   </body>
 </html>
