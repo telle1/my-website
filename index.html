@@ -414,7 +414,7 @@
                 <a href="https://github.com/telle1/Joyride" target="_blank"
                   ><i class="fab fa-3x fa-github"></i
                 ></a>
-                <a href="">
+                <a href="https://www.youtube.com/watch?v=B2i-zAsD2io&ab_channel=TiffanyLuu" target="_blank">
                   <i class="fab fa-3x fa-youtube"></i>
                 </a>
               </div>
@@ -533,16 +533,17 @@
     >
       <div class="container mt-10">
         <h1 class="text-center mb-5">Contact</h1>
-        <form action=”mailto:tiffanyell1@gmail.com” method=”POST”
-        enctype="text/plain">
+        <form name="contact" method="post" data-netlify="true"
+        enctype="text/plain" >
           <div class="form-full-name mb-2">
-            <input type="text" name="first-name" class="form-fname" placeholder="First Name" />
+            <input type="text" name="first-name" class="form-fname" placeholder="First Name" required />
             <input type="text" name="last-name" class="form-lname" placeholder="Last Name" />
           </div>
           <input type="text" name="subject" class="subject" placeholder="Subject" />
-          <textarea class="d-block" name="message" rows="5" placeholder="Message"></textarea>
+          <textarea class="d-block" name="message" rows="5" placeholder="Message" required></textarea>
           <button type="submit" class="btn btn-chat">Let's Chat</button>
         </form>
+        <div id="message" class="d-block text-center mt-3"></div>
 
         <p class="mt-5 mb-0 py-5 text-center d-block">
           ©2020 Tiffany Luu
@@ -572,5 +573,12 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.querySelector('form').onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById('message').innerHTML = "Thanks, I'll get in touch!"
+
+}
+    </script>
   </body>
 </html>

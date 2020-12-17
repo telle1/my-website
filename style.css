@@ -39,7 +39,7 @@ span {
     height: 100vh;
     position: relative;
     background: url('./images/cherry_blossom.png') no-repeat center center/ cover;
-    -webkit-animation: bgfade 5s ;
+    -webkit-animation: bgfade 8s ;
 }
 
 .hero{
