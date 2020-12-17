@@ -533,7 +533,7 @@
     >
       <div class="container mt-10">
         <h1 class="text-center mb-5">Contact</h1>
-        <form name="contact" method="post" data-netlify="true"
+        <form name="contact" action="POST" data-netlify="true"
         enctype="text/plain" >
           <div class="form-full-name mb-2">
             <input type="text" name="first-name" class="form-fname" placeholder="First Name" required />
@@ -575,7 +575,7 @@
     ></script>
     <script>
       document.querySelector('form').onsubmit = function(e) {
-      e.preventDefault();
+      // e.preventDefault();
       document.getElementById('message').innerHTML = "Thanks, I'll get in touch!"
 
 }
