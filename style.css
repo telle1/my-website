@@ -129,6 +129,9 @@ text{
     overflow: scroll;
 } 
 
+.signature{
+    float: right;
+}
 /*Skills---Skills---Skills---Skills---Skills--- */
 ul{
     list-style-type: none;
