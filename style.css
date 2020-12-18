@@ -3,6 +3,11 @@ body {
   overflow-x: hidden;
 }
 
+/*Add extra padding to the container*/
+.container{
+  padding: 0px 100px;
+}
+
 h1 {
   color: #e3cbc1;
   font-size: 56px;

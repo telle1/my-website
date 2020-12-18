@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiffany Luu</title>
+    <!--Stylesheets/Fonts-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!--This is the newest version of bootstrap, but the container padding is slightly smaller-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
@@ -15,13 +22,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-
-    <title>Tiffany Luu</title>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
-      data-auto-a11y="true"
-    ></script>
   </head>
   <body>
     <!--Navbar---Navbar---Navbar---Navbar---Navbar----->
@@ -49,7 +49,7 @@
             </div>
           </div>
         </nav>
-        </div>
+      </div>
     </section>
 
     <!--Hero---Hero---Hero---Hero---Hero----->
@@ -169,21 +169,23 @@
                   data-aos="flip-left"
                   data-aos-delay="500"
                 />
-            </div>
+              </div>
 
-            <div id="anchor1" class="smooth-scroll contact-icons">
-              <a href="https://github.com/telle1/" target="_blank"
-                ><i class="fab fa-3x fa-github"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/tiffany-luu0/"
-                target="_blank"
-                ><i class="fab fa-3x fa-linkedin-in"></i
-              ></a>
-              <a href="mailto:tiffanyell1@gmail.com"> <i class="fas fa-3x fa-envelope"></i> </a>
+              <div id="anchor1" class="contact-icons">
+                <a href="https://github.com/telle1/" target="_blank"
+                  ><i class="fab fa-3x fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/tiffany-luu0/"
+                  target="_blank"
+                  ><i class="fab fa-3x fa-linkedin-in"></i
+                ></a>
+                <a href="mailto:tiffanyell1@gmail.com">
+                  <i class="fas fa-3x fa-envelope"></i>
+                </a>
+              </div>
             </div>
-             </div> <!--end img wrapper-->
-
+            <!--end img wrapper-->
           </div>
           <div class="col-md-7 about-me-text">
             <h1
@@ -203,9 +205,8 @@
               data-aos-once="true"
             >
               A little bit about myself, I graduated from UCLA earlier this June
-              &#40;Go Bruins!&#41;
-               I majored in
-              psychobiology and worked on a health policy and practice team.
+              &#40;Go Bruins!&#41; I majored in psychobiology and worked on a
+              health policy and practice team.
             </p>
             <!-- <span class="unitalic">🐻💛💙</span>&#41;. -->
             <p
@@ -239,7 +240,7 @@
               couldn't be more excited.
             </p>
             <h4
-              class="signature" 
+              class="signature"
               data-aos="fade-down"
               data-aos-anchor="#anchor"
               data-aos-delay="700"
@@ -389,10 +390,10 @@
                 to message a driver. Drivers will get a text message
                 notification via Twilio when someone requests their ride.
                 Joyride is community-based, so users have a public, customizable
-                profile page. They can check notifications as well as 
-                recent feedback. On the rides page, users 
-                can check, edit, or delete current drives/rides and approve rider
-                requests. Feedback system is incorporated in the past ride section.
+                profile page. They can check notifications as well as recent
+                feedback. On the rides page, users can check, edit, or delete
+                current drives/rides and approve rider requests. Feedback system
+                is incorporated in the past ride section.
               </p>
               <div class="tech-stack">
                 Tech stack: React, Python, Flask, PostgreSQL
@@ -523,11 +524,7 @@
     >
       <div class="container mt-10">
         <h1 class="text-center mb-5">Contact</h1>
-        <form
-          name="contact-form"
-          method="POST"
-          data-netlify="true"
-        >
+        <form name="contact-form" method="POST" data-netlify="true">
           <div class="form-full-name mb-2">
             <input
               type="text"
@@ -557,7 +554,9 @@
             required
           ></textarea>
           <button type="submit" class="btn btn-chat">Let's Chat</button>
-          <p class="text-center mt-2">Or send me an email: tiffanyell1@gmail.com</p>
+          <p class="text-center mt-2">
+            Or send me an email: tiffanyell1@gmail.com
+          </p>
         </form>
         <div id="message" class="d-block text-center mt-3"></div>
 
@@ -571,36 +570,15 @@
       </div>
     </section>
 
-    <script>
-      AOS.init();
-    </script>
-
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-a11y="true"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    <!--Bootstrap script tags-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- <script>
-      const processForm = (form) => {
-        const data = new FormData(form);
-        data.append('form-name', 'contact-form');
-        fetch('/', {
-          method: 'POST',
-          body: data,
-        })
-          .then(() => {
-             document.getElementById('message').innerHTML = "Thanks, I'll get in touch!";
-          })
-          .catch((error) => {
-            document.getElementById('message').innerHTML = "Oops! Sorry, something went wrong.";
-          });
-      };
 
-      contactForm = document.querySelector('form');
-      contactForm.onsubmit = function (e) {
-        e.preventDefault();
-        processForm(contactForm);
-
-
-      };
-    </script> -->
   </body>
 </html>
