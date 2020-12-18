@@ -38,6 +38,10 @@ span {
   padding-left: 0px;
 }
 
+.navbar-light .navbar-brand:hover{
+  color: #fbe7df;
+}
+
 /*Hero---Hero---Hero---Hero---Hero---*/
 
 #hero {
