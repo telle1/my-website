@@ -5,7 +5,7 @@ body {
 
 /*Add extra padding to the container*/
 .container{
-  padding: 0px 100px;
+  padding: 0px 7%;
 }
 
 h1 {
@@ -271,20 +271,16 @@ textarea:active input:active {
 
 @media screen and (max-width: 640px) {
   text {
-    font-size: 90px;
+    font-size: 85px;
   }
-  /* .top-row, .middle-row, .bottom-row{
-        text-align: center;
-        margin: 0 9%;
-    } */
 }
 
 @media screen and (max-width: 765px) {
   .back-end-skills {
-    margin-left: 25px;
+    margin-left: 10px;
   }
   .other-skills {
-    margin-left: 70px;
+    margin-left: 30px;
   }
   #skills {
     margin-top: 500px;
