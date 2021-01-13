@@ -120,19 +120,6 @@ text {
   height: 80vh;
 }
 
-.top-row,
-.middle-row,
-.bottom-row {
-  display: flex;
-  width: 33.33%;
-}
-
-.top-row img,
-.middle-row img,
-.bottom-row img {
-  max-width: 100%;
-}
-
 .contact-icons {
   display: block;
   text-align: center;
@@ -141,6 +128,10 @@ text {
 .img-wrapper {
   width: 87%;
   margin: auto;
+}
+
+.img-wrapper img {
+  width: 100%;
 }
 
 .fa-github,
