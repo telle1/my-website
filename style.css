@@ -1,10 +1,7 @@
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html{
@@ -15,7 +12,6 @@ body {
   color: gray;
   overflow-x: hidden;
   font-size: 1.6rem;
-  
 }
 
 /*Add extra padding to the container*/
@@ -25,19 +21,11 @@ body {
 
 h1 {
   color: #e3cbc1;
-  font-size: 56px;
+  font-size: 5.6rem;
 }
-
-span {
-  color: #e3cbc1;
-  font-family: 'Pacifico';
-  font-size: 30px;
-}
-
-
 
 .mt-10 {
-  margin-top: 200px;
+  margin-top: 20rem;
 }
 
 /*Icons*/
@@ -61,6 +49,7 @@ span {
 
 .navbar-light .navbar-brand {
   color: #e3cbc1;
+  font-size: 2rem;
 }
 .navbar-light .navbar-brand:hover{
   color: #fbe7df;
@@ -68,11 +57,6 @@ span {
 
 .navbar {
   position: fixed;
-}
-
-.navbar-brand{
-  font-size: 2rem;
-  padding: 0;
 }
 
 /*Hero---Hero---Hero---Hero---Hero---*/
@@ -83,8 +67,6 @@ span {
   background: url('./images/cherry_blossom.png') no-repeat center center/ cover;
   animation: bgfade 8s;
 }
-
-
 
 .hero {
   position: absolute;
@@ -112,14 +94,13 @@ text {
 }
 
 .petals {
-  height: 300px;
+  height: 3rem;
   background: url('./images/petals.png') no-repeat center center/ cover;
 }
 
 /*About---About---About---About---About---*/
 #about-me {
   background: url('./images/petals.png') no-repeat center center/ cover;
-  /* height: 80vh; */
 }
 
 .contact-icons {
@@ -157,39 +138,38 @@ ul {
   list-style-type: none;
 }
 
-ul li h2 {
+.skills{
+  display: flex;
+  justify-content: center;
   font-size: 3rem;
   color: #aeaeae;
   line-height: 5rem;
 }
 
-.skills{
-  display: flex;
-  justify-content: center;
+.skills h2 {
+  font-size: 3rem;
+  color: #aeaeae;
+  line-height: 5rem;
 }
 
 /*Project---Project---Project---Project---Project--- */
+#projects .row {
+  margin-bottom: 5rem;
+}
 
-.carousel-item > img,.img-container > img {
-  width: 100%;
+.project-description span {
+  color: #e3cbc1;
+  font-family: 'Pacifico';
+  font-size: 3rem;
+}
+
+.project-description {
+  display: flex;
+  align-items: center;
 }
 
 .img-container, .carousel-item{
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-}
-
-.carousel-item > img, .img-container > img{
-  transition: transform .5s;
-}
-
-.carousel-item:hover img, .img-container:hover img {
-  transform: scale(1.2);
-}
-
-#projects .row {
-  margin-bottom: 50px;
 }
 
 .tech-stack {
@@ -197,9 +177,13 @@ ul li h2 {
   font-weight: bold;
 }
 
-.project-description {
-  display: flex;
-  align-items: center;
+.carousel-item > img,.img-container > img {
+  width: 100%;
+  transition: transform .5s;
+}
+
+.carousel-item:hover img, .img-container:hover img {
+  transform: scale(1.2);
 }
 
 .carousel-control-next,
@@ -213,12 +197,11 @@ form {
   margin: auto;
 }
 
-.form-fname,
-.form-lname,
-textarea,
-.subject {
+input[type="text"],
+textarea{
   border: 2px solid #e3cbc1;
   border-radius: 5px;
+  padding: 8px;
 }
 
 .form-full-name {
@@ -226,8 +209,7 @@ textarea,
   justify-content: space-between;
 }
 
-.form-fname,
-.form-lname {
+.form-full-name > * {
   width: 49%;
 }
 
@@ -236,12 +218,6 @@ textarea,
   width: 100%;
   margin: 1% 0;
 }
-
-input[type='text'],
-textarea {
-  padding: 8px;
-}
-
 
 .btn-chat {
   font-size: inherit;
@@ -252,8 +228,7 @@ textarea {
 }
 
 input:focus,
-textarea:focus,
-textarea:active input:active {
+textarea:focus{
   outline-width: 5px;
   outline-color: #fbe7df;
 }
