@@ -323,5 +323,8 @@ textarea:active input:active {
   .navbar{
     position: static;
   }
+  .about-me-text{
+    text-align: center;
+  }
 }
 
