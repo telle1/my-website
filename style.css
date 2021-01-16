@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 } */
+*{
+  box-sizing: border-box;
+}
 
 html{
   font-size: 62.5%;
@@ -155,7 +158,9 @@ ul {
 }
 
 ul li h2 {
+  font-size: 3rem;
   color: #aeaeae;
+  line-height: 5rem;
 }
 
 .skills{
@@ -167,6 +172,20 @@ ul li h2 {
 
 .carousel-item > img,.img-container > img {
   width: 100%;
+}
+
+.img-container, .carousel-item{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-item > img, .img-container > img{
+  transition: transform .5s;
+}
+
+.carousel-item:hover img, .img-container:hover img {
+  transform: scale(1.2);
 }
 
 #projects .row {
@@ -223,10 +242,12 @@ textarea {
   padding: 8px;
 }
 
+
 .btn-chat {
+  font-size: inherit;
   background-color: #e3cbc1;
   color: white;
-  margin: 20px auto;
+  margin: 2rem auto;
   display: block;
 }
 
@@ -280,17 +301,13 @@ textarea:active input:active {
 /*Queries*/
 @media screen and (max-width: 640px) {
   text {
-    font-size: 8.5rem;
+    font-size: 6.5rem;
   } 
-  
 }
 
 @media screen and (max-width: 765px) {
-  .back-end-skills {
-    margin-left: 10px;
-  }
-  .other-skills {
-    margin-left: 30px;
+  .skills{
+    text-align: center;
   }
 
   .about-me-greeting {
@@ -299,6 +316,12 @@ textarea:active input:active {
   }
   .mt-10{
     margin-top: 50px;
+  }
+}
+
+@media(max-width: 900px){
+  .navbar{
+    position: static;
   }
 }
 
