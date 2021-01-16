@@ -144,12 +144,37 @@ ul {
   font-size: 3rem;
   color: #aeaeae;
   line-height: 5rem;
+  position: relative;
 }
 
 .skills h2 {
   font-size: 3rem;
   color: #aeaeae;
   line-height: 5rem;
+}
+
+.front-end-skills::before, .back-end-skills::before, .other-skills:before{
+  position: absolute;
+  content: '';
+  display: inline-block;
+  font-size: 2rem;
+  /* border: 1px solid red; */
+  transform: rotate(-90deg);
+  top: 5rem;
+  left: 8%;
+  color: #e3cbc1;
+  text-align: right;
+}
+
+.front-end-skills::before{
+  content: 'Front-end Skills';
+}
+.back-end-skills::before{
+  content: 'Back-end Skills';
+}
+.other-skills::before{
+  content: 'Other Skills';
+  top: 3rem;
 }
 
 /*Project---Project---Project---Project---Project--- */
@@ -300,6 +325,12 @@ textarea:focus{
   }
   .about-me-text{
     text-align: center;
+  }
+}
+
+@media(max-width: 1400px){
+  .front-end-skills::before, .back-end-skills::before, .other-skills:before{
+    display: none;
   }
 }
 
