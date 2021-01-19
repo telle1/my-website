@@ -309,13 +309,15 @@ textarea:focus{
   .skills{
     text-align: center;
   }
-
   .about-me-greeting {
     display: block;
     text-align: center;
   }
   .mt-10{
     margin-top: 50px;
+  }
+  .project-description{
+    margin-top: 3rem;
   }
 }
 
