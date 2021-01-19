@@ -175,6 +175,7 @@ ul {
 .other-skills::before{
   content: 'Other Skills';
   top: 3rem;
+  left: 0;
 }
 
 /*Project---Project---Project---Project---Project--- */
