@@ -25,7 +25,7 @@ h1 {
 }
 
 .mt-10 {
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 
 /*Icons*/
@@ -36,7 +36,7 @@ h1 {
   margin-top: 20px;
 }
 
-[class*='fa-']:hover{
+[class*='fa-']:hover, .btn-chat:hover{
   transform: scale(1.1);
   color: #fbe7df;
   cursor: pointer;
@@ -124,6 +124,11 @@ text {
   color: #e3cbc1;
 }
 
+.about-me-greeting{
+  font-size: 5rem;
+
+}
+
 .about-me-par {
   text-indent: 30px;
 }
@@ -179,6 +184,11 @@ ul {
 }
 
 /*Project---Project---Project---Project---Project--- */
+.nav-link, .nav-link:hover{
+  color: #e3cbc1;
+}
+
+
 #projects .row {
   margin-bottom: 5rem;
 }
@@ -249,8 +259,14 @@ textarea,
   font-size: inherit;
   background-color: #e3cbc1;
   color: white;
+  padding: 1rem;
   margin: 2rem auto;
   display: block;
+}
+
+.btn-chat:hover{
+  background-color: #fbe7df;
+  color: gray;
 }
 
 input:focus,
