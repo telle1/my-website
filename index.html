@@ -211,39 +211,7 @@
       <div class="container mt-10">
         <h1 class="text-center mb-5">Projects</h1>
 
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <a
-              class="nav-link active"
-              id="fullstack-tab"
-              data-bs-toggle="tab"
-              href="#fullstack"
-              role="tab"
-              aria-controls="home"
-              aria-selected="true"
-              >Featured</a
-            >
-          </li>
-          <li class="nav-item" role="presentation">
-            <a
-              class="nav-link"
-              id="frontend-tab"
-              data-bs-toggle="tab"
-              href="#frontend"
-              role="tab"
-              aria-controls="profile"
-              aria-selected="false"
-              >Frontend</a
-            >
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div
-            class="tab-pane fade show active"
-            id="fullstack"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-          >
+     
             <div class="row mt-5 joyride">
               <div
                 class="col-lg-7"
@@ -504,137 +472,6 @@
               </div>
             </div> <!--End row cutie bird-->
 
-
-
-
-          </div>
-          <div
-            class="tab-pane fade"
-            id="frontend"
-            role="tabpanel"
-            aria-labelledby="frontend-tab"
-          >
-            <div class="row mt-5">
-              <div
-                class="col-lg-7"
-                data-aos="fade-right"
-                data-aos-delay="200"
-                data-aos-once="true"
-              >
-                <div class="img-container">
-                  <img
-                    class="sf-tours"
-                    src="./images/sf-tours/sf-tours.png"
-                    alt="SF Tours"
-                  />
-                </div>
-              </div>
-
-              <div class="col-lg-5 project-description">
-                <div>
-                  <p>
-                    <span>SF Tours</span> is a fictional
-                    tours website designed with CSS/Sass. I wanted to learn more about
-                    plain CSS and reduce my dependencies on external tools like Bootstrap
-                    . It uses the 7-1 SASS architecture to
-                    structure CSS code and extensive media queries to ensure
-                    responsive web design.
-                  </p>
-                  <div class="tech-stack">Tech stack: HTML/CSS, SASS</div>
-
-                  <div>
-                    <a href="https://github.com/telle1/sf-tours" target="_blank"
-                      ><i class="fab fa-3x fa-github"></i
-                    ></a>
-                    <a href="https://sf-tours.netlify.app/" target="_blank">
-                      <i class="fas fa-3x fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-5 project-description">
-                <div>
-                  <p>
-                    <span>Buffet Delights</span> is a fully responsive
-                    fictional webpage for a restaurant
-                    that I made to practice layouts such as flexbox and grid. 
-                  </p>
-                  <div class="tech-stack">Tech stack: HTML/CSS including Flexbox and Grid, SASS</div>
-
-                  <div>
-                    <a href="https://github.com/telle1/food-landing-page" target="_blank"
-                      ><i class="fab fa-3x fa-github"></i
-                    ></a>
-                    <a href="https://buffet-delights.netlify.app/" target="_blank">
-                      <i class="fas fa-3x fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-              class="col-lg-7 order-first order-lg-last"
-              data-aos="fade-left"
-              data-aos-delay="200"
-              data-aos-once="true"
-            >
-            <div class="img-container">
-              <img
-                class="buffet-delights"
-                src="./images/buffet/buffet.png"
-                alt="Buffet Delights"
-              />
-            </div>
-          </div>
-        </div>
-
-          <div class="row mt-5">
-            <div
-              class="col-lg-7"
-              data-aos="fade-right"
-              data-aos-delay="200"
-              data-aos-once="true"
-            >
-              <div class="img-container">
-                <img
-                  class="sf-tours"
-                  src="./images/todos/todos.png"
-                  alt="SF Tours"
-                />
-              </div>
-            </div>
-          <div class="col-lg-5 project-description">
-            <div>
-              <p>
-                <span>Todo's</span> is a simple todo-list app that allows users to
-                add, edit, and delete items. Users can toggle between completed, in progress, and 
-                all todos. Todos are saved to local storage. State is managed with Context API and useReducer.
-              </p>
-              <div class="tech-stack">Tech stack: React (Hooks), Styled Components</div>
-
-              <div>
-                <a href="https://github.com/telle1/to-do" target="_blank"
-                  ><i class="fab fa-3x fa-github"></i
-                ></a>
-                <a href="https://tiffstodos.netlify.app/" target="_blank">
-                  <i class="fas fa-3x fa-external-link-alt"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  
-    </div>
-
-
-
-
           </div>
         </div>
       </div>
@@ -651,31 +488,18 @@
         <h1 class="text-center mb-5">Contact</h1>
         <form name="contact-form" method="POST" data-netlify="true">
           <div class="form-full-name mb-2">
-            <input
-              type="text"
-              name="first-name"
-              class="form-fname"
-              placeholder="First Name"
-              required
+            <input type="text" name="first-name" class="form-fname"
+              placeholder="First Name" required
             />
-            <input
-              type="text"
-              name="last-name"
-              class="form-lname"
-              placeholder="Last Name"
-            />
+            <input type="text" name="last-name" class="form-lname"
+              placeholder="Last Name"/>
           </div>
           <input
-            type="text"
-            name="subject"
-            class="subject"
-            placeholder="Subject"
+            type="text" name="subject"
+            class="subject" placeholder="Subject"
           />
-          <textarea
-            class="d-block"
-            name="message"
-            rows="5"
-            placeholder="Message"
+          <textarea class="d-block" name="message"
+            rows="5" placeholder="Message"
             required
           ></textarea>
           <button type="submit" class="btn btn-chat">Let's Chat</button>
@@ -684,7 +508,6 @@
 
         <p class="mt-5 py-5 text-center">
           <span class="d-block">©2020 Tiffany Luu</span>
-          <span class="d-block">Designed and coded with passion</span>
         </p>
       </div>
     </section>
